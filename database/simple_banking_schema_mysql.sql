@@ -1,5 +1,5 @@
 
--- Simple Banking System - MySQL Schema (Beginner-Friendly)
+-- Simple Banking System - MySQL Schema
 -- Engine: InnoDB, Charset: utf8mb4, Collation: utf8mb4_0900_ai_ci (MySQL 8.0+)
 
 -- 0) Create and use database

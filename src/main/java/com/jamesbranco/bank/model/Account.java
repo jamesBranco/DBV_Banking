@@ -8,6 +8,7 @@ public class Account {
     private final String ownerUserId;
     private final String accountNumber;
     private BigDecimal balance;
+    private boolean frozen = false;   // ⭐ NEW
 
     public Account(String id, String ownerUserId, String accountNumber) {
         this.id = Objects.requireNonNull(id);
@@ -20,6 +21,21 @@ public class Account {
     public String getOwnerUserId() { return ownerUserId; }
     public String getAccountNumber() { return accountNumber; }
     public BigDecimal getBalance() { return balance; }
+
+
+    public boolean isFrozen() {
+        return frozen;
+    }
+
+
+    public void freeze() {
+        this.frozen = true;
+    }
+
+
+    public void unfreeze() {
+        this.frozen = false;
+    }
 
     public void deposit(BigDecimal amount) {
         requirePositive(amount);
