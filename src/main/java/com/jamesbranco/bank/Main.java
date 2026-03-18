@@ -36,7 +36,7 @@ public class Main {
         }
     }
 
-    // COMMON LOGIN / REGISTER
+    // client COMMON LOGIN / REGISTER
 
     private static String ensureUser(BankService bank) {
         while (true) {
